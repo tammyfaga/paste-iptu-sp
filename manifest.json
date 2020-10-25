@@ -1,0 +1,19 @@
+{
+  "name": "Paste IPTU SP",
+  "author": "Tammy Fagá - https://github.com/tammyfaga",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "A simple Chrome extension to allow you to paste the IPTU number into the input field of the PMSP website.",
+  "permissions": ["storage"], 
+  "browser_action": {
+    "default_title": "Paste IPTU PMSP",
+    "default_icon": "src/assets/img/icon-paste.png",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www3.prefeitura.sp.gov.br/editeg/forms/*"],
+      "js": ["src/assets/js/content.js"]
+    }
+  ]
+}

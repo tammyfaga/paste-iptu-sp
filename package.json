@@ -1,0 +1,8 @@
+{
+  "name": "paste-iptu-sp",
+  "version": "1.0.0",
+  "description": "Enables input field on the PMSP website to paste IPTU number",
+  "main": "index.js",
+  "author": "Tammy Faga",
+  "license": "MIT"
+}
